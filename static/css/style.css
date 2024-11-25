@@ -131,7 +131,7 @@ body{
                 }
                 .card:hover{
                     box-shadow: 2px 2px 2px 1px grey;
-                    transform: rotate(360deg);
+                    /* transform: rotate(360deg); */
                 }
             }
         }
