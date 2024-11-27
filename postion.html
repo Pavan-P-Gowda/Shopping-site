@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+            header#site-header{
+                background-color: black;
+                color: azure;
+                height: 30px;
+                font-size: medium;
+                text-align: center;
+                font-weight: 900;
+                z-index: 10;
+                /* fixing the header to the top of vewing */
+                position: fixed;
+                width: 100%;
+                top: 0;
+            }
+            main{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                section#a1-absolute{
+                    div.parent{
+                        border: 1px solid;
+                        height: 200px;
+                        width: 400px;
+                        margin: auto;
+                        position: relative;
+                            div.child{
+                            border: 1px solid orange;
+                             background-color: chartreuse;
+                             height: 50%;
+                             aspect-ratio: 1/1;
+                             position: absolute;
+                             right: 0;
+                            bottom: 0;
+                            border-radius: 30%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        div.stickly-child{
+                            height: 50%;
+                            border: 1px solid;
+                            aspect-ratio: 1/1;
+                            position: sticky;
+                            top: 100px;
+                            background-color: blanchedalmond;
+                        }
+                    }
+                    
+                }
+            }
+            footer#site-footer{
+                background-color: black;
+                color: azure;
+                height: 30px;
+                font-size: medium;
+                text-align: center;
+                font-weight: 900;
+                z-index: 10;
+                /* fixing the footer to the bottom of view */
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="site-header">
+        This is my Header
+    </header>
+    <main>
+        <section id="a1-absolute">
+            <div class="parent">
+                <div class="child">
+                    <p>
+                        A
+                    </p>
+                </div>
+                <div class="stickly-child">
+                     <p>
+                        V
+                     </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="site-footer">
+        this is my header
+    </footer>
+</body>
+</html>

@@ -17,6 +17,10 @@ body{
         background-color: rgb(53, 126, 132);
         justify-content: space-between;
         align-items: center;
+        /* fixing the header to the top of vewing */
+        position: fixed;
+                width: 100%;
+                top: 0;
         /* border: 1px solid; */
         /* border-radius: 50%; */
         div.site-log{
@@ -62,7 +66,7 @@ body{
         section#Products{
             width: 80%;
             margin: auto;
-            margin-top: 30px;
+            margin-top: 120px;
             .container{
                 display: flex;
                 flex-wrap: wrap;
@@ -73,7 +77,7 @@ body{
                     height: 260px;
                     width: 200px;
                     /* padding: 10px; */
-                    box-shadow: 2px 2px 2px 1px rgb(102, 98, 98);
+                    box-shadow: 2px 2px 2px 1px rgb(56, 55, 55);
                     border-radius: 20px;
                     overflow: hidden;
                     .card-img{
@@ -130,7 +134,7 @@ body{
                     }
                 }
                 .card:hover{
-                    box-shadow: 2px 2px 2px 1px grey;
+                    box-shadow: 2px 2px 2px 1px rgb(159, 156, 156);
                     /* transform: rotate(360deg); */
                 }
             }
