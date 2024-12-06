@@ -9,6 +9,12 @@ for these styling i use the universal selector as (*)*/
     margin: 0;
 }
 body{
+    .hide{
+        display: none;
+    }
+    /* .blur{
+        filter: blur(5px);
+    } */
     /* styling for site header */
     header#site-header{
         height: 100px;
@@ -21,6 +27,7 @@ body{
         position: fixed;
                 width: 100%;
                 top: 0;
+                z-index: 10;
         /* border: 1px solid; */
         /* border-radius: 50%; */
         div.site-log{
@@ -63,6 +70,9 @@ body{
         }
     }
     main{
+        .blur{
+            filter: blur(7px);
+        }
         section#Products{
             width: 80%;
             margin: auto;
@@ -139,5 +149,120 @@ body{
                 }
             }
         }
+        section#login {
+            position: fixed;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition-duration: 0.5s ;
+            div{
+                height: 200px;
+                width: 300px;
+                background-color: white;
+                border-radius: 10px;
+                overflow: hidden;
+                form.login-form {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: rgb(135, 129, 129);
+
+
+                    header {
+                        height: 50px;
+                        background-color: rgb(92, 179, 185);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        color: rgb(248, 255, 255);
+                        h1 {
+                            font-size: 25px;
+                            height: auto;
+                        }
+
+                    }
+                    div {
+                        height: 30px;
+                        width: 80%;
+                        border: 1px solid;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            
+                            font-size: medium;
+                            border-radius: 10px;
+                            border: none;
+                            
+                        }
+
+                        input::placeholder {
+                            color: rgb(85, 85, 85);
+                            font-size: small;
+                        }
+                        
+                    }
+                    button {
+                            width: 40%;
+                            height: 30px;
+                            margin-bottom: 5px;
+                            border-radius: 10px;
+                            border: none;
+                    }
+                    button:active {
+                        box-shadow: 1px 1px 1px 1px yellow;
+                        background-color: black;
+                        color: azure;
+                    }
+                }
+            }
+        }
+        section#login:hover{
+            transform: translate(-50%,-50%) scale(1.2);
+            transition-duration: 2s;
+        }
+        section#branches {
+            div.grid-container {
+                display: grid;
+                /* flex-wrap: wrap; */
+                grid-template-columns: auto auto auto auto;
+                div.card {
+                    height: 150px;
+                    width: 300px;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: 1px 1px 1px 1px grey;
+                    border-radius: 3px;
+                    overflow: hidden;
+                    margin: 10px;
+                    /* margin-top: 100px; */
+                    div.card-img {
+                        
+                        height: 100%;
+                        width: 50%;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    div.card-body{
+                        width: 50%;
+
+                    }
+                }
+            }
+
+        }
+        section#head{
+            margin-top: 100px;
+        }
     }
+    
 }
+
