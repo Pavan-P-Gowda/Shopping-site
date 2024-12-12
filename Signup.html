@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Site</title>
+    <title>Signup\Shopping Site</title>
     <link rel="shortcut icon" href="static/images/logs/Img.ico" type="image/x-icon">
     <!-- link.favicon - used to show the logo on the top of website page -->
     <link rel="stylesheet" href="static/css/style.css">
@@ -20,14 +20,13 @@
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
-            <a href="Signup.html">Signup</a>
+            <a href="login.html">login</a>
             <a href="about.html">About</a>
         </nav>
     </header>
     <!-- site header ends -->
     <main>
-        <section id="Products">
+        <section id="Products" class="blur">
             <div class="container">
                 <!-- a single product card -->
             <div class="card">
@@ -229,6 +228,24 @@
                 </div>
             </div>
             <!-- product card ends -->
+        </section>
+        <section id="login">
+            <div>
+                <form action="" method="post" class="login-form">
+                    <header>
+                        <h1>Login</h1>
+                    </header>
+                    <div>
+                        <label for="username-input" class="hide">username:</label>
+                        <input type="text" name="" placeholder="Enter your username" id="username-input" required>
+                    </div>
+                    <div>
+                        <label for="pwd-input" class="hide">Password</label>
+                        <input type="password" id="pwd-input" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
