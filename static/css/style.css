@@ -263,6 +263,35 @@ body{
         section#head{
             margin-top: 100px;
         }
+        header.hi{
+            padding: 10px;
+            margin-top: 120px;
+            border: 1px solid;
+            width: 60%;
+            background-color: rgb(76, 195, 195);
+            border-radius: 10px;
+            color: white;
+        }
+        table{
+            /* padding: 10px; */
+            /* margin-top: 10px; */
+            border: 1px solid;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: rgb(209, 199, 199);
+        }
+        button.it{
+            background-color: rgb(72, 196, 196);
+            border-radius: 5px;
+            border: 1px solid;
+            width: 10%;
+            height: 10%;
+            
+        }
+        button:active{
+                background-color: gray;
+                color: azure;
+            }
     }
     
 }
