@@ -272,12 +272,13 @@ body{
         }
         section#head{
             margin-top: 100px;
+            /* border: 1ps solid; */
         }
         header.hi{
             padding: 10px;
             margin-top: 120px;
             border: 1px solid;
-            width: 58%;
+            width: 23%;
             background-color: rgb(76, 195, 195);
             border-radius: 10px;
             color: white;
